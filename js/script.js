@@ -29,4 +29,19 @@ dates.textContent = `${year}/${month}/${day}`
 clock.textContent = `${hour}:${minute}`;
 };
 
-setInterval(()=> dayTime(), 1000)
+setInterval(()=> dayTime(), 1000);
+
+
+
+
+function clock() {
+    document.querySelector('.icons').style.display = 'none';
+    document.querySelector('.topp').style.display = 'none';
+    document.querySelector('.clock_date').style.display = 'block';
+}
+
+function Close() {
+    document.querySelector('.icons').style.display = 'flex';
+    document.querySelector('.topp').style.display = 'flex';
+    document.querySelector('.clock_date').style.display = 'none';
+}

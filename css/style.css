@@ -93,6 +93,7 @@ main {
 .icon {
   width: 20%;
   display: flex;
+  cursor: pointer;
   align-items: center;
   flex-direction: column;
   gap: 5px;
@@ -118,13 +119,14 @@ main {
   align-items: center;
   padding: 15px 30px;
   border-radius: 15px;
-  margin: 0 auto;
+  margin: 10px auto;
   display: flex;
   width: 90%;
   gap: 20px;
 }
 .topp img {
   width: 18%;
+  cursor: pointer;
   transition: 0.3s;
 }
 .topp img:hover {
@@ -137,6 +139,10 @@ main {
   padding: 20px;
   border-radius: 0 0 33px 33px;
   background-color: white;
+  display: none;
+}
+.clock_date span {
+  cursor: pointer;
 }
 
 #clocks {
