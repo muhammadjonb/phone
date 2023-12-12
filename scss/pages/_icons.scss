@@ -1,5 +1,5 @@
 main{
-    height: 94%;
+    height: calc(100% - 30px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;

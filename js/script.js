@@ -17,8 +17,15 @@ const time = new Date()
 const hour = time.getHours()
 const minute = time.getMinutes()
 const seconds = time.getUTCSeconds()
+const year = time.getFullYear()
+const month = time.getMonth()
+const day = time.getDay()
 
 const clock = document.getElementById('clock')
+const newclock = document.getElementById('clocks')
+const dates = document.getElementById('dates')
+newclock.textContent = `${hour}:${minute}:${seconds}`
+dates.textContent = `${year}/${month}/${day}`
 clock.textContent = `${hour}:${minute}`;
 };
 
