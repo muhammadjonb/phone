@@ -10,25 +10,25 @@ batteryPromise.then((batteryObject) => {
   batarea.innerText = Level;
 });
 
-// const dayTime = () => {
-//   const time = new Date();
+const dayTime = () => {
+  const time = new Date();
 
-//   const hour = time.getHours();
-//   const minute = time.getMinutes();
-//   const seconds = time.getUTCSeconds();
-//   const year = time.getFullYear();
-//   const month = time.getMonth();
-//   const day = time.getDay();
+  const hour = time.getHours();
+  const minute = time.getMinutes();
+  const seconds = time.getUTCSeconds();
+  const year = time.getFullYear();
+  const month = time.getMonth();
+  const day = time.getDay();
 
-//   const clock = document.getElementById("clock");
-//   const newclock = document.getElementById("clocks");
-//   const dates = document.getElementById("dates");
-//   newclock.textContent = `${hour}:${minute}:${seconds}`;
-//   dates.textContent = `${year}/${month}/${day}`;
-//   clock.textContent = `${hour}:${minute}`;
-// };
+  const clock = document.getElementById("clock");
+  const newclock = document.getElementById("clocks");
+  const dates = document.getElementById("dates");
+  newclock.textContent = `${hour}:${minute}:${seconds}`;
+  dates.textContent = `${year}/${month}/${day}`;
+  clock.textContent = `${hour}:${minute}`;
+};
 
-// setInterval(() => dayTime(), 1000);
+setInterval(() => dayTime(), 1000);
 
 function clock() {
   document.querySelector(".icons").style.display = "none";
@@ -109,3 +109,15 @@ function setAlarm() {
   setAlarmBtn.innerText = 'Clear Alarm'
 }
 setAlarmBtn.addEventListener("click", setAlarm);
+
+
+function alertClock() {
+  document.querySelector('.icons').style.display = 'none'
+  document.querySelector('.topp').style.display = 'none'
+  document.querySelector('.alarm').style.display = 'flex'
+}
+function alarmNone() {
+  document.querySelector('.icons').style.display = 'flex'
+  document.querySelector('.topp').style.display = 'flex'
+  document.querySelector('.alarm').style.display = 'none'
+}

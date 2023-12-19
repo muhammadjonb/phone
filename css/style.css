@@ -161,14 +161,21 @@ main {
 }
 
 .alarm {
+  position: relative;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: #fff;
   border-radius: 0 0 30px 30px;
+}
+.alarm span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
 }
 
 .wrapper {
